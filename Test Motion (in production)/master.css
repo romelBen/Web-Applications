@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#background-1 {
+    background: url(http://mythologian.net/wp-content/uploads/2017/01/lotus-flower-meaning-symbolism.jpg) no-repeat center center; 
+    background-size: 100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+#background-2 {
+    background: url(https://maxpull-tlu7l6lqiu.stackpathdns.com/wp-content/uploads/2017/05/zone-8-hibiscus.jpg) no-repeat center center; 
+    background-size: 100%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.content {
+    width: 60%;
+    margin: 0 auto;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+.content h1 {
+    font-family: Poppins;
+    font-size: 54px;
+    color: #fefefe;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-top: 0;
+    text-align: left;
+    color: #fefefe;
+    font-weight: 400;
+}
+
+.overlay-2 {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(https://i.pinimg.com/originals/0a/bc/a8/0abca833680baa9c2d7b662701d1c92e.jpg) no-repeat center center;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fefefe;
+}
+/*
+.screen {
+    color: #323232;
+    font-family: Poppins;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+.myBtn {
+    font-family: Poppins;
+    position: absolute;
+    top: 45%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    display: block;
+    padding: 24px 50px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: rgb(255, 174, 0);
+    border: 2px solid rgb(255, 174, 0);
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: crosshair;
+    transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+    color: #101010;
+    cursor: crosshair;
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+    top: 0;
+}
+
+.arrow-down {
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgb(255, 174, 0);
+    transform: rotate(315deg);
+    cursor: crosshair;
+    margin: 650px 0px 0px 820px;
+    padding: 90px 0 0 90px;
+}
+
+.arrow-down:hover {
+    box-shadow: -2px 2px 0 rgba(255, 174, 0, 0.5);
+    cursor: crosshair;
+}
+
+.arrow-down:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.arrow-down:before {
+    top: 0;
+}
+
+

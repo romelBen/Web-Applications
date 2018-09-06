@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chloris Paradise</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="jquery.vide.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+         <div class="overlay" data-vide-bg="natureinmotion">   
+            <div class="intro">
+                <button class="myBtn" onclick="fadeOut()">Nature in Motion</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-2"></div>
+
+    <div id="background-1"></div>
+        <div class="content">
+            <h1>Lotus Flower</h1>
+                <p class="data">
+                    Back in Egyptians times, the lotus flower was very important in their religion. 
+                    Meaning creation and rebirth, it was a symbol of the sun, because at nightfall it closes and goes beneath the water and at dawn it climbs up above the water and reopens.
+                </p>
+<!--            <div class="arrow-down" onclick="fadeOut()"></div> -->
+        </div>
+
+<!--   <div id="background-2"></div> -->
+<!--    
+    <div class="content">
+        <h1>Hibiscus</h1>
+            <p class="data">
+                The exact origin of Hibiscus rosa-sinensis is unknown, although it has been cultivated in China, Japan and the Pacific islands for a long time. 
+                Two white-flowered species, Hibiscus arnottianus and Hibiscus waimeae, are believed to be native to Hawaii.
+        </p>
+       <div class="arrow-down" onclick="fadeOut()"></div> 
+    </div>
+-->
+<script>
+function fadeOut() {
+//Text box moves up
+TweenMax.to(".myBtn", 1, {
+     y: -100,
+     opacity: 0
+});
+
+//Whole screen moves up
+TweenMax.to(".screen", 2, {
+     y: -400,
+     opacity: 0,
+     ease: Power2.easeInOut,
+     delay: 2
+});
+
+//Transition to second screen
+TweenMax.from(".overlay", 2, {
+     ease: Power2.easeInOut
+});
+
+//Both move to third screen but not fully
+TweenMax.to(".overlay", 2, {
+     delay: 2.6,
+     top: "-110%",
+     ease: Expo.easeInOut
+});
+
+TweenMax.to(".overlay-2", 5, {
+     delay: 3,
+     top: "-110%",
+     ease: Expo.easeInOut
+});
+
+//Finshes transition to third page with placement of image and text.
+TweenMax.from("#background", 2, {
+     delay: 3.2,
+     opacity: 0,
+     ease: Power2.easeInOut
+});
+
+TweenMax.to("#background", 2, {
+    delay: 3.2, 
+    opacity: 1,
+    y: -300,
+    ease: Power2.easeInOut
+});
+
+/*
+//Press arrow to move downward
+TweenMax.to(".arrow-down", 1, {
+    y: -400,
+    ease: Power2.easeInOut,
+    delay: 2,
+});
+
+
+//Transition third screen up
+TweenMax.to(".screen", 2, {
+     y: -400,
+     opacity: 0,
+     ease: Power2.easeInOut,
+     delay: 2
+});
+
+//Transition to fourth screen
+TweenMax.from(".overlay", 2, {
+     ease: Power2.easeInOut
+});
+*/
+
+}
+</script>
+</body>
+</html>

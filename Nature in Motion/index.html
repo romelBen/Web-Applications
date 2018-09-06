@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chloris Paradise</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+    <script src="jquery.vide.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay">   
+            <p class="screen">PARADISE</p>
+            <div class="intro">
+                <button class="myBtn" onclick="fadeOut()">PARADISE</button>
+            </div>
+        </div>
+
+        <div class="overlay-2"></div>
+        <div class="content">
+            <h1>Chloris Paradise</h1>
+            <p class="data">
+                The flowers of the world produce an atmosphere of beauty and magesty. Let's look into the world of flowers that engulf our world and give us color.
+            </p>
+        </div>
+    </div>
+
+<script>
+function fadeOut() {
+
+TweenMax.to(".myBtn", 1, {
+     y: -100,
+     opacity: 0
+});
+
+TweenMax.to(".screen", 2, {
+     y: -400,
+     opacity: 0,
+     ease: Power2.easeInOut,
+     delay: 2
+});
+
+TweenMax.from(".overlay", 2, {
+     ease: Power2.easeInOut
+});
+
+TweenMax.to(".overlay", 2, {
+     delay: 2.6,
+     top: "-110%",
+     ease: Expo.easeInOut
+});
+
+TweenMax.to(".overlay-2", 5, {
+     delay: 3,
+     top: "-110%",
+     ease: Expo.easeInOut
+});
+
+TweenMax.from(".content", 2, {
+     delay: 3.2,
+     opacity: 0,
+     ease: Power2.easeInOut
+});
+
+TweenMax.to(".content", 2, {
+     opacity: 1,
+     y: -300,
+     delay: 3.2,
+     ease: Power2.easeInOut
+});
+
+}
+</script>
+</body>
+</html>
