@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinnie's Palace</title>
+</head>
+<body style=" margin-bottom:0px;">
+    <header>
+        <p style="margin-top:0px; margin-bottom:0px; text-align:left;">Contact Us</p>
+    </header>
+
+    <hr />
+    <h1 style="margin-top:0px; margin-bottom:0px; text-align:center;">Vinnie's Palace</h1>
+    <hr />
+
+    <!--Links to home.html, menu.html, and contact.html-->
+    <nav>
+<p style="margin-top:10px; margin-bottom:10px; word-spacing:20px;"> 
+    <a href="home.html" target="_blank"> Home</a>
+    <a href="menu.html" target="_blank">Menu</a>
+    <a style=word-spacing:0px; href="contact.html" target="_blank">Contact Us</a>
+</p>
+    </nav>   
+    <hr />
+
+    <form style="text-align:center; display:block; margin-left: auto; margin-right:auto;" action="contact.html" method="POST">
+        Name:  <input type="text" name="fullName" required /><br /><br />
+        Email: <input type="text" name="email" required/><br /><br />
+        Phone: <input type="tel" name="telephone" required/><br /><br />
+        Reason for Inquiry: 
+        <select required>
+            <option value="catering">Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select><br /><br />
+        Additional Information: <textarea name="additionalInfo" cols="30" rows="6"></textarea><br /><br />
+        Have you been to the restaurant: 
+            <input type="radio" name="answer" value="NO" checked>No      
+            <input type="radio" name="answer" value="YES">Yes<br /><br />
+        Best days to contact you: 
+        <input type="checkbox" name="myChoice" value="Monday">M &nbsp; 
+        <input type="checkbox" name="myChoice" value="Tuesday">T &nbsp;
+        <input type="checkbox" name="myChoice" value="Wednesday">W &nbsp;
+        <input type="checkbox" name="myChoice" value="Thursday">TH &nbsp;
+        <input type="checkbox" name="myChoice" value="Friday">F<br /><br />
+        <input type="button" value="Send Request">
+    </form>
+
+    <hr />
+
+    <p style="text-align:center;">1654 Dylan Street, Dallas, Texas, 75043</p>
+    <p style="text-align: center;">956-568-3453</p>
+
+</body>
+</html>
