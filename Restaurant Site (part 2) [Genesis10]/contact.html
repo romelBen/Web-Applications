@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinnie's Contact Request</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="restaurantStyle.css">
+
+<!--Overall internal style sheet-->
+<style>
+body {
+    margin-bottom: 0px;
+}
+    
+table {
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-spacing: 20px;
+}
+
+form {
+    text-align:center; 
+    display:block; 
+    margin-left: auto; 
+    margin-right:auto;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <p>Contact Us</p>
+    </header>
+
+    <hr />
+    <h1>Vinnie's Palace</h1>
+    <hr />
+
+    <!--Links to home.html, menu.html, and contact.html-->
+<nav>
+    <p> 
+        <a href="home.html"> Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+    </p>
+</nav>   
+    <hr />
+
+    <form action="contact.html" method="POST">
+        Name:  <input type="text" name="fullName" required /><br /><br />
+        Email: <input type="text" name="email" required/><br /><br />
+        Phone: <input type="tel" name="telephone" required/><br /><br />
+        Reason for Inquiry: 
+        <select required>
+            <option value="catering">Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select><br /><br />
+        Additional Information: <textarea name="additionalInfo" cols="30" rows="6"></textarea><br /><br />
+        Have you been to the restaurant: 
+            <input type="radio" name="answer" value="NO" checked>No      
+            <input type="radio" name="answer" value="YES">Yes<br /><br />
+        Best days to contact you: 
+        <input type="checkbox" name="myChoice" value="Monday">M &nbsp; 
+        <input type="checkbox" name="myChoice" value="Tuesday">T &nbsp;
+        <input type="checkbox" name="myChoice" value="Wednesday">W &nbsp;
+        <input type="checkbox" name="myChoice" value="Thursday">TH &nbsp;
+        <input type="checkbox" name="myChoice" value="Friday">F<br /><br />
+        <input type="button" value="Send Request">
+    </form>
+
+    <hr />
+
+<footer>
+    <p>1654 Dylan Street, Dallas, Texas, 75043</p>
+    <p>956-568-3453</p>
+</footer>
+
+</body>
+</html>
