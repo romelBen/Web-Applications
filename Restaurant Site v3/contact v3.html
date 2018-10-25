@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vinnie's Contact Request</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="restaurantStyle.css">
+
+<!--Overall internal style sheet-->
+<style>
+body {
+    margin-bottom: 0px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-spacing: 20px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
+
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+</style>
+
+<!--Display if javascript is not turned on. Instructions to a separate website will help in activating JavaScript.-->
+<noscript>
+    For full functionality of this site, it is necessary to enable JavaScript.
+    Here are the <a href="https://www.enable-javascript.com/" target="_blank">
+    instructions on how to enable JavaScript in your web browser.</a>
+</noscript>
+
+</head>
+<body>
+    <header>
+        <p>Contact Us</p>
+    </header>
+
+    <hr />
+    <h1>Vinnie's Palace</h1>
+
+<!--Links to home.html, menu.html, and contact.html-->
+<nav>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <a class="nav-link" href="home v3.html"><i class="material-icons">home</i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="padding-bottom: 14px;" href="menu v3.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" style="padding-bottom: 13px;" href="contact v3.html">Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+<br />
+
+<form action="" novalidate="" class="main-form" method="POST" id="validateForm">
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" class="form-control" required>
+                <div class="valid-feedback">Thank you for entering your first name!</div>
+                <div class="invalid-feedback">Please enter your first name.</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" class="form-control" required>
+                <div class="valid-feedback">Thank you for entering your last name!</div>
+                <div class="invalid-feedback">Please enter your last name.</div>
+            </div>
+        </div>
+    </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="text" name="email" id="email" class="form-control" required>
+                <div class="valid-feedback">Success! We can now contact you through email!</div>
+                <div class="invalid-feedback">Please enter your email so we can have other means of contacting you.</div>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" required>
+                <div class="valid-feedback">Success! We will contact you for further information.</div>
+                <div class="invalid-feedback">Please enter your phone number so we may call you.</div>
+            </div>
+            <div class="form-group">
+                <label for="textArea">Additional Information:</label>
+                <textarea class="form-control" id="textArea" rows="4" required></textarea>
+                <div class="valid-feedback">Thank you for inputting your information.</div>
+                <div class="invalid-feedback">Please enter additional information. If not, enter N/A.</div>
+            </div>
+<div class="form-group">
+    <label for="inquiry">Reason for Inquiry:</label>
+    <select name="inquiry" id="inquiry" required>
+        <option value="catering">Catering</option>
+        <option value="privateParty">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+<div class="form-group">
+    <div class="row">
+        <legend class="col-form-label">Have you been to the restaurant:</legend>
+        <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="visited" id="visitedNo" value="NO" checked>
+                <label class="form-check-label text-dark" for="visitedNo">No</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="visited" id="visitedYes" value="YES">
+                <label class="form-check-label text-dark" for="visitedYes">Yes</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+        <div class="row">
+            <legend class="col-form-label">Best days to contact you:</legend>
+            <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="monday" value="Monday">
+                    <label class="form-check-label text-dark" for="monday">M</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="tuesday" value="Tuesday">
+                    <label class="form-check-label text-dark" for="tuesday">T</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="wednesday" value="Wednesday">
+                    <label class="form-check-label text-dark" for="wednesday">W</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="thursday" value="Thursday">
+                    <label class="form-check-label text-dark" for="thursday">TH</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="friday" value="Friday">
+                    <label class="form-check-label text-dark" for="friday">F</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="form-group">
+    <div class="row justify-content-center">
+        <button type="submit" class="btn btn-outline-primary" id="btnSubmit">Send Request</button>
+    </div>
+</div>
+
+</form>
+
+<hr>
+
+<!--Checks input boxes to see if information has been inputted.-->
+<script type="text/javascript">
+    $("#btnSubmit").click(function(event) {
+
+// Fetch form to use bootstrap validation for what is "required"
+    var form = $("#validateForm")
+
+    if (form[0].checkValidity() === false) {
+    event.preventDefault()
+    event.stopPropagation()
+}
+
+form.addClass('was-validated');
+// Perform ajax submit here...
+
+});
+</script>
+
+<footer>
+    <p><u>Contact Information</u></p>
+    <p>1654 Dylan Street, Dallas, Texas, 75043</p>
+    <p>956-568-3453</p>
+</footer>
+
+
+</body>
+</html>

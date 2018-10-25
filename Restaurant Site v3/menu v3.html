@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="restaurantStyle.css">
 
 <!--Overall internal style sheet-->
@@ -15,12 +16,6 @@
 body {
     background-color: #FFFFF0;
     margin-bottom: 0px;
-}
-
-header {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: left;
 }
     
 table {
@@ -30,7 +25,7 @@ table {
 
 th {
     color: #DEB887;
-    font-family: 'Merriweather', serif;
+    font-family: 'Muli', sans-serif;
 }
 
 tr {
@@ -38,9 +33,19 @@ tr {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 </style>
-
 </head>
+
+<!--Display if javascript is not turned on. Instructions to a separate website will help in activating JavaScript.-->
+<noscript>
+    For full functionality of this site, it is necessary to enable JavaScript.
+    Here are the <a href="https://www.enable-javascript.com/" target="_blank">
+    instructions on how to enable JavaScript in your web browser.</a>
+</noscript>
 
 <body>
     <header>
@@ -49,17 +54,21 @@ tr {
 
     <hr />
     <h1>Vinnie's Palace</h1>
-    <hr />
 
-    <!--Links to home.html, menu.html, and contact.html-->
+<!--Links to home.html, menu.html, and contact.html-->
     <nav>
-<p> 
-    <a href="home.html"> Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact Us</a>
-</p>
-    </nav>   
-    <hr />
+        <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="home v3.html"><i class="material-icons">home</i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="menu v3.html">Menu</a>
+            </li>
+            <li class="nav-item"> 
+                <a class="nav-link" style="padding-bottom: 14px;" href="contact v3.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>     
 
 <!--First row displaying 3 entries-->
 
@@ -192,7 +201,8 @@ tr {
     <br />
     <hr />
 
-    <footer>
+<footer>
+    <p><u>Contact Information</u></p>
     <p>1654 Dylan Street, Dallas, Texas, 75043</p>
     <p>956-568-3453</p>
 </footer>
