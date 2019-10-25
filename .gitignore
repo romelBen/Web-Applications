@@ -1,0 +1,8 @@
+.vscode/
+.settings/
+sftp-config.json
+*.css.map
+.lock-wscript
+node_modules
+logs
+*.logsnpm-debug.log*
